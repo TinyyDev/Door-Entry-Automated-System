@@ -1,17 +1,8 @@
-import RPi.GPIO as GPIO
 from time import sleep
-from gpiozero import LED, Buzzer, Button
-from signal import pause
+from gpiozero import LED, Buzzer, MotionSensor
 
-def motion_detect(PIN: int):
-    GPIO.setwarnings(False)
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(PIN, GPIO.IN)
-    motion = GPIO.input(17)
-    GPIO.cleanup()
-    return motion
 
-def buzzer(PIN=27):
+def buzzer(PIN=23):
     buzz = Buzzer(PIN)
     buzz.on()
     sleep(0.9)
@@ -32,18 +23,19 @@ def green_light_buzzer_off(PIN=27):
     Buzzer(PIN).off()
     
 def main():
-    button = Button(17)
+    sensor = MotionSensor(17)
     red_light_on()
     try:
         while True:
-            if button.is_pressed:
+            if sensor.wait_for_motion():
                 red_light_off()
-                print('Button pressed!')
+                print('Motion detected')
                 buzzer()
                 green_light_on()
                 sleep(2)
             else:
                 green_light_buzzer_off()
+                print('Motion not detected')
                 print('Sleep mode :)')
                 red_light_on()
                 sleep(2)

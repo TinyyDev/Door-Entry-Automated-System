@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Motion Sensor Status</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
 </head>
 <body>
-    <div class ="nav">
+    <div>
         <ul>
-            <li><img src="{{ url_for('static', filename='dor.jpg') }}" alt="" style="height: 100px;
-             width: 100px;"></li>
-             <li>ADES</li>
+            <li><a href="#"><img src="{{url_for('static', filename='dor.jpg')}}" alt="" height="50px" width="50px"></a></li>
+            <li><a href="#">ADES</a></li>
+            <li><a href="#">
+            </a></li>
         </ul>
     </div>
-    <div class="container">
-        <h1>Motion Sensor Status</h1>
-        <div class="status" id="motion-status">{{ motion_status }}</div>
-        <button id="refresh-button">Refresh</button>
+
+    <div style="float: right; padding-right: 50px; padding-top: 50px;"> 
+        <input type="button" value="Power ON">
+        <input type="button" value="Power Off">
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <div class="navi">
+        <p style="font-size: 50px; color: red;">Closed</p>
+    </div>
 </body>
 </html>

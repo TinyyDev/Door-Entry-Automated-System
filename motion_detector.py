@@ -10,7 +10,7 @@ def buzzer(PIN=23):
     sleep(0.1)
     
 def red_light_on(PIN=22):
-    LED(PIN).on()
+    return LED(PIN).on()
 
 def red_light_off(PIN=22):
     return LED(PIN).on()
@@ -24,17 +24,17 @@ def green_light_buzzer_off(PIN=27):
     
 def main():
     sensor = MotionSensor(17)
-    red_light_on()
+    LED(22).on()
     try:
         while True:
-            if sensor.wait_for_motion():
-                red_light_off()
+            if sensor.value == 1:
+                LED(22).off() # red led
                 print('Motion detected')
                 buzzer()
-                green_light_on()
+                LED(27).on() # green led
                 sleep(2)
-            else:
-                green_light_buzzer_off()
+            elif sensor.value == 0:
+                LED(27).on() # green led
                 print('Motion not detected')
                 print('Sleep mode :)')
                 red_light_on()
@@ -43,4 +43,4 @@ def main():
         print('Exiting with ctrl-c!!!')
         
 if __name__ == '__main__':
-        main()
+    main()

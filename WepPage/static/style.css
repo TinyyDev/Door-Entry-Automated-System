@@ -39,3 +39,22 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.nav {
+    background-color: #0056b3;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 30px;
+    
+}
+
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 14px;
+}
+
+body{
+    background-color: azure;
+}

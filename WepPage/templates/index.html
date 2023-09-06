@@ -5,6 +5,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class ="nav">
+        <ul>
+            <li><img src="{{ url_for('static', filename='dor.jpg') }}" alt="" style="height: 100px;
+             width: 100px;"></li>
+             <li>ADES</li>
+        </ul>
+    </div>
     <div class="container">
         <h1>Motion Sensor Status</h1>
         <div class="status" id="motion-status">{{ motion_status }}</div>

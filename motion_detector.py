@@ -24,7 +24,7 @@ def green_light_buzzer_off(PIN=27):
     
 def main():
     sensor = MotionSensor(17)
-    LED(22).on()
+    LED(22).on() # red led
     try:
         while True:
             if sensor.value == 1:

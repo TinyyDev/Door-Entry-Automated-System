@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to refresh the status at regular intervals (e.g., every 5 seconds)
     setInterval(function() {
         updateMotionStatus();
-    }, 2000); // 5000 milliseconds = 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
 });

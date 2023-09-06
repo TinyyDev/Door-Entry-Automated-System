@@ -1,5 +1,5 @@
 from time import sleep
-from gpiozero import LED, Buzzer, Button
+from gpiozero import LED
 
 while True:
     LED(22).on()

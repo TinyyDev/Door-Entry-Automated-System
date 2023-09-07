@@ -18,9 +18,12 @@ Open command line and run the following command
 ```
 git clone https://github.com/TinyyDev/Door-Entry-Automated-System.git
 ```
+### Requirements
+Run this command to install all the neccescesary packages
+```
+pip install -r requirement.txt
+```
 
-3. Install python
-4. Pip install Flask
 5. In your favourite IDE create a python environmennt to help run the web App
 6. Connect your PIR sensor, LED and Breadboard to the Raspberry Pi using your Jumper wires
 7. Consult the GPIO pin table for the right connections.

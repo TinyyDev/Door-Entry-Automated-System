@@ -13,11 +13,12 @@ The "Simple Room Entry Home Automation System" is a cost-effective and user-frie
 Flask, Html, Css, GPIOzero package from python, Git and Github for version control
 
 
-# How to Download
+### How to Download
 Open command line and run the following command
 ```
 git clone https://github.com/TinyyDev/Door-Entry-Automated-System.git
-```   
+```
+
 3. Install python
 4. Pip install Flask
 5. In your favourite IDE create a python environmennt to help run the web App

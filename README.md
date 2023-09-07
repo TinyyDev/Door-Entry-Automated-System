@@ -25,3 +25,12 @@ Flask, Html, Css, GPIOzero package from python, Git and Github for version contr
 4. **Safety Features:** The system includes safety features to prevent the door from closing on a person who is still inside the room. This can be achieved using additional sensors or pressure plates near the doorway.
 5. **User Interface:** Users can interact with the system through a user-friendly interface. They can adjust sensitivity settings, choose manual control, or temporarily disable the automation.
  
+
+# How to Download
+1. Open command line and run "git clone https://github.com/TinyyDev/Door-Entry-Automated-System.git"
+2. Install python
+3. Pip install Flask
+4. In your favoorite IDE create a python environmennt to help run the web App
+5. Connect your PIR sensor, LED and Breadboard to the Raspberry Pi using your Jumper wires
+6. change directory to "WEbPage" folder and run "python app.py" to start the flask server.
+

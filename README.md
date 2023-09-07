@@ -32,5 +32,6 @@ Flask, Html, Css, GPIOzero package from python, Git and Github for version contr
 3. Pip install Flask
 4. In your favoorite IDE create a python environmennt to help run the web App
 5. Connect your PIR sensor, LED and Breadboard to the Raspberry Pi using your Jumper wires
-6. change directory to "WEbPage" folder and run "python app.py" to start the flask server.
+6. Consult the GPIO pin table for the right connections.
+7. change directory to "WEbPage" folder and run "python app.py" to start the flask server.
 

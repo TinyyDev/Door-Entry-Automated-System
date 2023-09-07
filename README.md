@@ -37,7 +37,7 @@ cd Door-Entry-Automated-System
 ```
 python app.py
 ```
-    to run the wep App
+to run the wep App
 6. Connect your PIR sensor, LED and Breadboard to the Raspberry Pi using your Jumper wires
 7. Consult the GPIO pin table for the right connections.
 8. change directory to "WEbPage" folder and run "python app.py" to start the flask server.

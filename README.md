@@ -29,7 +29,7 @@ Flask, Html, Css, GPIOzero package from python, Git and Github for version contr
 # How to Download
 1. Open command line and run the following command
    
-      "git clone https://github.com/TinyyDev/Door-Entry-Automated-System.git"
+    "git clone https://github.com/TinyyDev/Door-Entry-Automated-System.git"
    
 3. Install python
 4. Pip install Flask

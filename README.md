@@ -1,7 +1,7 @@
 # Door-Entry-Automated-System
 The "Simple Room Entry Home Automation System" is a cost-effective and user-friendly solution designed to enhance the convenience and energy efficiency of your home. This system is capable of automatically detecting a person's entry into a room, opening the door, and then closing it when the person leaves. It provides a seamless and hands-free experience, making your daily routines more efficient and comfortable.
 
-### Components needed (Tech Stack)
+## Components needed (Tech Stack)
 ### Hardware
 1. **Motion Sensors:** 
 2. **Microcontroller:** 

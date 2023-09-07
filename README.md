@@ -1,11 +1,33 @@
 # Door-Entry-Automated-System
-A simple door entry automation system created with raspberry pi apllication which utilizes PIR sensors to dsetect motion and open doors automatically.
+The "Simple Room Entry Home Automation System" is a cost-effective and user-friendly solution designed to enhance the convenience and energy efficiency of your home. This system is capable of automatically detecting a person's entry into a room, opening the door, and then closing it when the person leaves. It provides a seamless and hands-free experience, making your daily routines more efficient and comfortable.
+
 ## Applications
-This will make public doors more accessible to: the disabled, pregnant women and the old aged.
+- **Residential Homes:** Homeowners can install this system at the entrance to bedrooms, bathrooms, or any room where hands-free access is desired. It's particularly beneficial for individuals with mobility challenges.
+- **Commercial Buildings:** Offices, conference rooms, and restrooms in commercial buildings can be equipped with this automation system for added convenience and hygiene.
+- **Hospitals and Healthcare Facilities:** In healthcare settings, where hygiene and ease of access are critical, this system can be used in patient rooms and corridors.
+- **Public Restrooms:** Automated door systems are commonly used in public restrooms to improve sanitation and reduce the need for touch-based interactions.
 
 # Components
 ## Hardware
-Raspberry Pi, Breadboard, Jumper wires, LEDs, Buzzers, PIR sensor, 
+1. **Motion Sensors:** Infrared (IR) motion sensors are used to detect the presence of a person entering the room. These sensors can detect changes in heat signatures and trigger the automation system.
+2. **Microcontroller:** A microcontroller, such as an Arduino or Raspberry Pi, serves as the brain of the system. It processes the sensor data and controls the door-opening mechanism.
+3. **Door Control Mechanism:** This component includes a motor or actuator responsible for opening and closing the door. It can be connected to the microcontroller and operated based on input from the motion sensor.
+4. **User Interface:** A user-friendly interface, such as a smartphone app or a physical control panel, allows users to customize system settings and manually control the door if needed.
+5. **Power Supply:** A power supply unit provides the necessary electrical power to the system components.
 
 ## Software
 Flask, Html, Css, GPIOzero package from python, Git and Github for version control
+
+# Functionality
+1. **Motion Detection:** The system continuously monitors the room using the motion sensor. When it detects movement, it sends a signal to the microcontroller.
+2. **Microcontroller Processing:** The microcontroller receives the signal from the motion sensor and processes it. It determines whether a person is entering or leaving the room based on the direction of motion.
+3. **Door Control:** If a person is entering the room, the microcontroller activates the door control mechanism, causing the door to open. If a person is leaving, it closes the door after a delay to ensure safe passage.
+4. **Safety Features:** The system includes safety features to prevent the door from closing on a person who is still inside the room. This can be achieved using additional sensors or pressure plates near the doorway.
+5. **User Interface:** Users can interact with the system through a user-friendly interface. They can adjust sensitivity settings, choose manual control, or temporarily disable the automation.
+
+# Benefits
+- **Convenience**: No need to manually open or close the door when entering or leaving a room.
+- **Energy Savings**: Reduced energy consumption due to shorter door-open durations.
+- **Improved Accessibility**: Particularly beneficial for individuals with mobility challenges.
+- **Security**: Enhances home security by ensuring doors are closed when not in use.
+- **Customization**: Customize settings to suit your preferences and specific room requirements.

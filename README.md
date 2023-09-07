@@ -12,11 +12,11 @@ The "Simple Room Entry Home Automation System" is a cost-effective and user-frie
 ```
 ## Software
 ```
-1. **Flask**
-2. **Html**
-3. **Css**
-4. **GPIOzero package from python**
-5. **Git and Github for version control**
+1. Flask
+2. Html
+3. Css
+4. GPIOzero package from python
+5. Git and Github for version control
 ```
 
 ### How to Download

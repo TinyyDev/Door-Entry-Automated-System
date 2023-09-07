@@ -27,12 +27,15 @@ Run this command to install all the necessary packages
 ```
 pip install -r requirements.txt
 ```
-```cd Door-Entry-Automated-System
+
+```
+cd Door-Entry-Automated-System
 ```
 
 5. In your favourite IDE create a python environmennt to help run the web App
 
-``` python app.py
+```
+python app.py
 ```
     to run the wep App
 6. Connect your PIR sensor, LED and Breadboard to the Raspberry Pi using your Jumper wires

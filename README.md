@@ -24,10 +24,4 @@ Flask, Html, Css, GPIOzero package from python, Git and Github for version contr
 3. **Door Control:** If a person is entering the room, the microcontroller activates the door control mechanism, causing the door to open. If a person is leaving, it closes the door after a delay to ensure safe passage.
 4. **Safety Features:** The system includes safety features to prevent the door from closing on a person who is still inside the room. This can be achieved using additional sensors or pressure plates near the doorway.
 5. **User Interface:** Users can interact with the system through a user-friendly interface. They can adjust sensitivity settings, choose manual control, or temporarily disable the automation.
-
-# Benefits
-- **Convenience**: No need to manually open or close the door when entering or leaving a room.
-- **Energy Savings**: Reduced energy consumption due to shorter door-open durations.
-- **Improved Accessibility**: Particularly beneficial for individuals with mobility challenges.
-- **Security**: Enhances home security by ensuring doors are closed when not in use.
-- **Customization**: Customize settings to suit your preferences and specific room requirements.
+ 

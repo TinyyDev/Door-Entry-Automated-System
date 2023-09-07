@@ -3,19 +3,21 @@ The "Simple Room Entry Home Automation System" is a cost-effective and user-frie
 
 ## Components needed (Tech Stack)
 ### Hardware
+```
 1. **Motion Sensors:** 
 2. **Microcontroller:** 
 3. **Door Control Mechanism:**  
 4. **User Interface:** 
 5. **Power Supply:**
-
+```
 ## Software
+```
 1. **Flask**
 2. **Html**
 3. **Css**
 4. **GPIOzero package from python**
 5. **Git and Github for version control**
-
+```
 
 ### How to Download
 Open command line and run the following command

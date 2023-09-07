@@ -4,11 +4,11 @@ The "Simple Room Entry Home Automation System" is a cost-effective and user-frie
 ## Components needed (Tech Stack)
 ### Hardware
 ```
-1. **Motion Sensors:** 
-2. **Microcontroller:** 
-3. **Door Control Mechanism:**  
-4. **User Interface:** 
-5. **Power Supply:**
+1. Motion Sensors
+2. Microcontroller
+3. Door Control Mechanism
+4. User Interface
+5. Power Supply
 ```
 ## Software
 ```

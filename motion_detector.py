@@ -25,14 +25,14 @@ def main():
                 green.on()
                 buzzer_on()
                 print('Motion detected')
-                sleep(2)
+                sleep(3)
             elif sensor.value == 0:
                 green.off()
                 buzzer_off()
                 red.on()
                 print('Motion not detected')
                 print('Sleep mode :)')
-                sleep(1.5)
+                sleep(2)
     except KeyboardInterrupt:
         print('Exiting with ctrl-c!!!')
         

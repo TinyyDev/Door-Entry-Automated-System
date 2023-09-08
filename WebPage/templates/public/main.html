@@ -29,7 +29,7 @@
                 <img class="shrink-0 w-[179px] h-[293px]  relative" src="../../static/assets/unlocked.png" alt="" />
                 <!--button-->
 
-                <button   class="bg-[#4de734] rounded-2xl p-4 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[150px]  relative text-[#ffffff] text-center  font-medium text-2xl capitalize">
+                <button id="demo"  class="bg-[#4de734] rounded-2xl p-4 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[150px]  relative text-[#ffffff] text-center  font-medium text-2xl capitalize">
                 
                      opened
                    
@@ -77,22 +77,50 @@
     <script>
         // Get the condition variable passed from Python
         var condition = {{ condition|tojson|safe }};
-
+    
         // Get the image-container element
-        var imageContainer = document.getElementById('-locked-image-container');
-
-        // Create an image element
+        var imageContainer = document.getElementById('locked-image-container');
+    
+        // Create an image element for the padlock
         var image = document.createElement('img');
-
-        // Set the image source based on the condition
-        if (condition) {
-            image.src = '../../static/assets/unlocked.png'; // Replace with the path to your true image
-        } else {
-            image.src = '../../static/assets/locked.png'; // Replace with the path to your false image
+    
+        // Create a button element
+        var button = document.getElementById('demo');
+    
+        // Function to toggle the state
+        function toggleState() {
+            if (condition) {
+                // If it was opened, change to closed
+                condition = false;
+                button.textContent = 'closed';
+                button.style.backgroundColor = '#e7344d'; // Red background color
+                image.src = '../../static/assets/locked.png'; // Path to locked image
+            } else {
+                // If it was closed, change to opened
+                condition = true;
+                button.textContent = 'opened';
+                button.style.backgroundColor = '#4de734'; // Green background color
+                image.src = '../../static/assets/unlocked.png'; // Path to unlocked image
+            }
         }
-
+    
+        // Attach the toggleState function to the button's click event
+        button.addEventListener('click', toggleState);
+    
+        // Initialize the button and image based on the initial condition
+        if (condition) {
+            button.textContent = 'opened';
+            button.style.backgroundColor = '#4de734'; // Green background color
+            image.src = '../../static/assets/unlocked.png'; // Path to unlocked image
+        } else {
+            button.textContent = 'closed';
+            button.style.backgroundColor = '#e7344d'; // Red background color
+            image.src = '../../static/assets/locked.png'; // Path to locked image
+        }
+    
         // Append the image to the container
         imageContainer.appendChild(image);
     </script>
+
 </body>
 </html>
